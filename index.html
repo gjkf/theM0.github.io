@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
   <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
   <meta name="theme-color" content="#000000">
 
   <!-- META TAGS -->
@@ -30,7 +30,51 @@
 </head>
 
 <body>
-  <h1>Hello world!</h1>
+  <div class="bg-yellow">
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <img src="images/logo.png" alt="MOdesign logo" class="header__logo">
+    <nav class="header__nav">
+      <a href="javascript:void(0)">About me</a>
+      <a href="javascript:void(0)">Work</a>
+      <a href="javascript:void(0)">Knowledge</a>
+      <a href="javascript:void(0)">Contact</a>
+    </nav>
+  </header>
+
+  <!-- BIG SECTION -->
+  <div class="big">
+    <img src="images/browser.png" class="big__image">
+    <h1 class="big__title">Hello <span>I'm Stefano</span></h1>
+    <button class="big__btn">Discover more</button>
+  </div>
+
+  <!-- ABOUT ME -->
+  <section class="about">
+    <h1 class="about__title">About me</h1>
+    <div class="about__line"></div>
+    <p class="about__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit urna eu orci iaculis, nec tempor risus accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas tellus massa, posuere at posuere vel, interdum at ante. Cras nunc ligula, porta in massa non, iaculis auctor dui.</p>
+  </section>
+
+  <!-- WORK -->
+  <section class="work">
+    <h1 class="work__title">Work</h1>
+    <div class="work__grid">
+      <figure class="big"></figure>
+      <figure class="small1"></figure>
+      <figure class="small2"></figure>
+      <figure class="medium"></figure>
+    </div>
+  </section>
+
+  <!-- KNOWLEDGE -->
+  <section class="knowledge">
+    <h1 class="knowledge__title">Knowledge</h1>
+    <!-- TODO -->
+  </section>
 </body>
 
 </html>
