@@ -9,6 +9,7 @@
   <title>MO design</title>
 
   <!-- STYLESHEETS AND SCRIPTS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- FAVICON -->
@@ -36,12 +37,13 @@
   <!-- HEADER -->
   <header class="header">
     <img src="images/logo.png" alt="MOdesign logo" class="header__logo">
-    <nav class="header__nav">
+    <nav class="header__nav" id="mobileMenu">
       <a href="javascript:void(0)">About me</a>
       <a href="javascript:void(0)">Work</a>
       <a href="javascript:void(0)">Knowledge</a>
       <a href="javascript:void(0)">Contact</a>
     </nav>
+    <i class="fas fa-bars" id="mobileBtn"></i>
   </header>
 
   <!-- BIG SECTION -->
@@ -59,7 +61,7 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit urna eu orci iaculis, nec tempor risus accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas tellus massa, posuere at posuere vel, interdum at ante. Cras nunc ligula, porta in massa non, iaculis auctor dui.</p>
   </section>
 
-  <!-- WORK -->
+  <!-- WORK
   <section class="work">
     <h1 class="work__title">Work</h1>
     <div class="work__grid">
@@ -68,13 +70,15 @@
       <figure class="small2"></figure>
       <figure class="medium"></figure>
     </div>
-  </section>
+  </section>-->
 
   <!-- KNOWLEDGE -->
   <section class="knowledge">
     <h1 class="knowledge__title">Knowledge</h1>
     <!-- TODO -->
   </section>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

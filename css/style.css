@@ -51,6 +51,10 @@ body {
   text-decoration: none;
 }
 
+.header .fas {
+  display: none;
+}
+
 /*
 ==================================
 
@@ -181,4 +185,99 @@ body {
 
 .work__grid figure.medium {
   grid-area: medium;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+  .bg-yellow {
+    height: 40px;
+  }
+
+  .header__logo {
+    height: 38px;
+  }
+
+  .header .fas {
+    display: initial;
+    font-size: 26px;
+    position: relative;
+    top: 0.5px;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .big {
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .big__image {
+    width: 90%;
+    height: initial;
+    padding-top: 80px;
+  }
+
+  .big__title {
+    font-size: 35px;
+    margin: 15px auto 5px;
+  }
+
+  .big__btn {
+    font-size: 20px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav.mobile {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FCD033;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: initial;
+    width: auto;
+  }
+
+  .header__nav.mobile a {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  .header__nav.mobile a:first-child {
+    margin-top: 100px;
+  }
+
+  .about__text {
+    padding: 0px 15px;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .about {
+    margin: 10px auto 0;
+  }
+
+  .about__title {
+    font-size: 30px;
+  }
+
+  .about__line {
+    top: 37px;
+    width: 130px;
+  }
+
+  .stop {
+    overflow: hidden;
+  }
 }
