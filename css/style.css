@@ -146,7 +146,7 @@ body {
 */
 
 .work {
-  margin: 200px auto;
+  margin: 200px auto 100px;
 }
 
 .work__title {
@@ -159,36 +159,36 @@ body {
   width: 200px;
 }
 
-.work__grid {
-  max-width: 1100px;
-  height: 530px;
+.work__gallery {
   margin: 0 auto;
-  display: grid;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-  grid-template-columns: 550px auto auto;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "big small1 small2"
-                       "big medium medium";
+  width: 90%;
+  max-width: 1200px;
 }
 
-.work__grid figure {
-  background-position: center;
-  margin: 0;
-  background-image: url("../images/test.jpg");
-  cursor: pointer;
+.work__gallery__image {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
 }
 
-.work__grid figure.big {
-  grid-area: big;
+.work__gallery__image .desc {
+  background-color: rgba(0,0,0,0.65);
+  bottom: 0;
+  font-size: 25px;
+  color: #FCD033;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
 }
 
-.work__grid figure.medium {
-  grid-area: medium;
+.work__gallery__image img {
+  max-height: 100%;
+  width: 100%;
+  display: block;
 }
-
-
-
 
 @media screen and (max-width: 960px) {
   .bg-yellow {
@@ -275,6 +275,17 @@ body {
   .about__line {
     top: 37px;
     width: 130px;
+  }
+
+  .work__title {
+    font-size: 32px;
+    padding: 6px 0;
+    width: 135px;
+  }
+
+  .work__gallery__image .desc {
+    font-size: 20px;
+    padding: 14px 0;
   }
 
   .stop {
