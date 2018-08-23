@@ -137,6 +137,11 @@ body {
   max-width: 600px;
 }
 
+.about__text a {
+  color: #fff;
+  font-size: 21px;
+}
+
 /*
 ==================================
 
@@ -188,6 +193,35 @@ body {
   max-height: 100%;
   width: 100%;
   display: block;
+}
+
+/*
+==================================
+
+  KNOWLEDGE
+
+==================================
+*/
+
+.knowledge {
+  background-color: #FCD033;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.knowledge__title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.knowledge__text {
+  margin: 0 auto;
+  text-align: left;
+  width: 90%;
+  max-width: 960px;
+  font-size: 20px;
+  font-family: "Roboto";
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 960px) {
