@@ -38,10 +38,10 @@
   <header class="header">
     <img src="images/logo.png" alt="MOdesign logo" class="header__logo">
     <nav class="header__nav" id="mobileMenu">
-      <a href="javascript:void(0)">About me</a>
-      <a href="javascript:void(0)">Work</a>
-      <a href="javascript:void(0)">Knowledge</a>
-      <a href="javascript:void(0)">Contact</a>
+      <a href="javascript:void(0)" data-to="about">About me</a>
+      <a href="javascript:void(0)" data-to="work">Work</a>
+      <a href="javascript:void(0)" data-to="knowledge">Knowledge</a>
+      <a href="javascript:void(0)" data-to="contact">Contact</a>
     </nav>
     <i class="fas fa-bars" id="mobileBtn"></i>
   </header>
@@ -50,11 +50,11 @@
   <div class="big">
     <img src="images/browser.png" class="big__image">
     <h1 class="big__title">Hello <span>I'm Stefano</span></h1>
-    <button class="big__btn">Discover more</button>
+    <button class="big__btn" id="bigBtn">Discover more</button>
   </div>
 
   <!-- ABOUT ME -->
-  <section class="about">
+  <section class="about" id="about">
     <h1 class="about__title">About me</h1>
     <div class="about__line"></div>
     <p class="about__text">
@@ -62,7 +62,7 @@
   </section>
 
   <!-- WORK -->
-  <section class="work">
+  <section class="work" id="work">
     <h1 class="work__title">Work</h1>
     <div class="work__gallery">
       <a href="http://themoportfolio.altervista.org/portfolio/liberty-craft/" class="work__gallery__image">
@@ -85,7 +85,7 @@
   </section>
 
   <!-- KNOWLEDGE -->
-  <section class="knowledge">
+  <section class="knowledge" id="knowledge">
     <h1 class="knowledge__title">Knowledge</h1>
     <p class="knowledge__text">I have experience with both: front end and back end of a website. But I prefer to work on the back end. As a web designer I know HTML, CSS and JS well.
     </p>
@@ -95,7 +95,7 @@
   </section>
 
   <!-- CONTACT FOOTER -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <ul class="footer__list">
       <li>Telegram: &nbsp;&nbsp;<a href="https://t.me/thecmo">@thecmo</a></li>
       <li>Discord: &nbsp;&nbsp;theMO#8276</li>
